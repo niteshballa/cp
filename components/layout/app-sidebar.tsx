@@ -33,6 +33,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { getEnvConfig } from "@/lib/env-config"
+import { DialogTitle } from "@/components/ui/dialog"
 
 interface AppSidebarProps {
   collapsed?: boolean
@@ -281,6 +282,11 @@ export function AppSidebar({
           )}
         </div>
       </div>
+
+      {/* Add DialogTitle for mobile view */}
+      {isMobile && (
+        <DialogTitle className="sr-only">Navigation Menu</DialogTitle>
+      )}
 
       {/* Sidebar content - scrollable */}
       <ScrollArea className="flex-1">
