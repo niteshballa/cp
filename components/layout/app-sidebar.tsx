@@ -107,12 +107,11 @@ export function AppSidebar({
         ico: ShoppingBagIcon,
         label: "Products"
       },
-      // Wallet item is commented out as requested
-      // {
-      //   href: "/wallet",
-      //   icon: WalletIcon,
-      //   label: "Wallet",
-      // },
+      {
+        href: "/wallet",
+        ico: WalletIcon,
+        label: "Wallet",
+      },
     ]
 
     return items

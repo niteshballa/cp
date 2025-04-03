@@ -1,0 +1,14 @@
+{
+    "entry": [
+        "app/**/*.{ts,tsx}",
+        "pages/**/*.{ts,tsx}"
+    ],
+    "project": "**/*.{js,ts,tsx}",
+    "ignorePatterns": [
+        "**/node_modules/**"
+    ],
+    "ignoreExportsUsedInFile": true,
+    "ignoreDependencies": [
+        "postcss-load-config"
+    ]
+}
